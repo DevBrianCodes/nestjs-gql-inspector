@@ -1,0 +1,29 @@
+{
+  "name": "nestjs-gql-inspector",
+  "version": "0.1.0",
+  "description": "A zero-config NestJS GraphQL interceptor to log and inspect slow resolvers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "graphql",
+    "interceptor",
+    "profiler",
+    "performance",
+    "devtool"
+  ],
+  "author": "Brian Rudolph",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^11.1.3"
+  },
+  "peerDependencies": {
+    "@nestjs/core": "^11.1.3",
+    "@nestjs/graphql": "^13.1.0",
+    "graphql": "^16.11.0"
+  }
+}
